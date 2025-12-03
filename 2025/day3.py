@@ -6,10 +6,10 @@ def max_joltage(n):
     for bank in banks:
         start = 0
         nums = []
-        for c in range(len(bank) - n + 1, len(bank) + 1):
+        for end in range(len(bank) - n + 1, len(bank) + 1):
             m = bank[start]
             m_i = start
-            for i in range(start, c):
+            for i in range(start, end):
                 if bank[i] == 9:
                     m = 9
                     m_i = i
